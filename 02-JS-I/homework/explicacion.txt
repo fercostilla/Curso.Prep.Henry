@@ -1,0 +1,15 @@
+    1 Variables
+	2 Strings
+	3 Funciones (argumentos, `return`)
+	4 Declaraciones `if`
+	5 Valores booleanos (`true`, `false`)
+
+1-Varables: facilidad y habilidad de poder guardar un valor u informacion de de algo, para luego usarlas.
+
+2-Strings: datos de texto, palaras, letras, se escriben entre comillas, simples o dobles.
+
+3-Funciones (argumentos, `return`):son un tipo de objetos invocables. Que tienen las mismmas propiedades que otro objeto.A las funciones se las utiliza para calcularlas, cambiarlas, hacer algo con ellas.
+
+4-Declaraciones `if`: es un control de flujo, podemos realizar perguntas por cierto o falso, con el condicionante 'if'. Sirve para que la funcion nos demuestre si algo es verdadero o falso.
+
+5-Valores booleanos (`true`, `false`): es un codigo binarioen Javascrip se utiliza significar ycuenta con 2 opciones, true: verdadero, o false: falso.
