@@ -1,0 +1,11 @@
+
+* `for`
+* `&&`, `||`, `!`
+
+for : retpite un codigo de bloque varias veces, evalúa expresiones una y otra vez hasta que devuelve lo que estamos buscando o se detiene. Primero, se declara una variable,luego una expresión condicional, el ciclo continuará sucediendo hasta que sea falso, y por ultimo,se incrementa la variable.
+
+Operadores logicos &&: significa 'Y', evaluá ambas expresiones y devolverá verdadero si AMBAS expresiones son 'true',si alguna de las expresiones son 'false', o ambas devolvera falso.
+
+|| : su significado es 'O',determina si una de las expresiones es `true`, devolverá verdadero.  Si  ambas de las expresiones son`false` devolvera falso.
+
+! : operador "NO", devolverá el valor booleano opuesto de lo que se le pasa.
