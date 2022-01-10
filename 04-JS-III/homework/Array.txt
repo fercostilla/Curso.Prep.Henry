@@ -1,0 +1,1 @@
+Arrays: "arreglos", lista de elementos, se define entre brakets,se ingresas datos o elementos, pueden contener todo tipos de elementos, funciones e inclusive otro array adentro. se declara una variable de matriz, establecidad entre [], separadas por comas, se utiliza de contenedor donde se pueden acceder a estos elementos de manera simple.
