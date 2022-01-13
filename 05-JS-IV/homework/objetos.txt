@@ -1,0 +1,16 @@
+
+    * Objetos
+	* Propiedades
+	* Métodos
+	* Bucle `for…in`
+	* Notación de puntos vs notación de corchetes
+
+Objetos: contienen  mucha informacion sobre una sola cosa,a diferencia de los arreglos, Los objetos se instancian usando llaves {}.
+
+Propiedades: son los diferentes items que contiene ese objeto, o clave, seguidas de un valor asignado.
+
+Metodos: son las funciones guardadas en un objeto, los metodos al igual que las funciones pueden tener argumentos.
+
+Bucle `for…in`: es tipo de bucle,  entre paréntesis se declara una variable, la palabra clave `in` y el nombre del objeto. for (let clave in usuario) y finalizará cuando se hayan iterado todas las claves. 
+
+Notación de puntos vs notación de corchetes: son dos maneras de acceder a las propiedades de los elementos, -breaket notation: se utiliza para aplicar variables y funciones, usuario['nombre'], y dot notation: es literar, solo para buscar lo que tiene en el modulo, usuario.nombre
