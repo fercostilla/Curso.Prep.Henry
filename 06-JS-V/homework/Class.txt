@@ -1,0 +1,7 @@
+*  Prototype
+* _Constructors_ (de Clases)
+
+Prototype: todos los objetos en Javascript, tienen una referencia a otro objeto que es llamado prototipo. Los Obejetos tienen sus propiedades a su vez tienen definido su prototipo, si el no tiene una propiedad pordefecto buscara la propiedad del prototipo.
+se puede asignar propiedades a un prototipo.(Prototipado).
+
+Constructors_ (de Clases): Las clases son útiles para crear muchos objetos que comparten algunas de las mismas propiedades y métodos (como los usuarios en un sitio web).
