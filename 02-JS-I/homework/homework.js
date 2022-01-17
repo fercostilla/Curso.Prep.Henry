@@ -107,7 +107,11 @@ function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (num % 2 === 0) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function esImpar(num) {
@@ -143,13 +147,7 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  var resto = num % 1;
-  var entero = num - resto;
-  if (resto >= 0.5) {
-    return entero + 1;
- } else {
-  return entero;
- }
+  
  return Math.round(num);
 }
 
@@ -185,13 +183,14 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-} return str + '!';
+ return str + '!';
+}
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinado = nombre + '' + apellido;
+  var combinado = nombre + ' ' + apellido;
   return combinado; 
 }
 
@@ -199,10 +198,10 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'Hola' + nombre + '!';
+  return 'Hola ' + nombre + '!';
 }
 
-function obtenerAreaRectangulo(alto, ancho) {
+function obtenerAreaRectangulo(alto, ancho) { 
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
   return alto * ancho;
@@ -238,10 +237,10 @@ function esVocal(letra){
 if (letra.length > 1) {
   return "Dato incorrecto"
 }  
-if (letra === "a", letra === "e" , letra === "i", letra === "o", letra === "u") {
-return "Es vocal"
+if (letra === "a" || letra === "e" || letra === "i"|| letra === "o" || letra === "u") {
+  return "Es vocal"
 }
-return "Dato incorrecto"
+  return "Dato incorrecto"
 }
 
 
