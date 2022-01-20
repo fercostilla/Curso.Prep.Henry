@@ -3,13 +3,13 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-  return array = [0];
+  return array[0];
 }
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
- return array = [array.length -1]
+ return array[array.length -1]
 }
 
 
@@ -24,18 +24,17 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  var nuevoArray = [];
   for(var i = 0; i < array.length; i++) {
-    nuevoArray[i] = array[i] + 1;
+    array[i] = array[i] + 1;
   }
-   return nuevoArray;
+   return array;
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código: 
-array[array.length] = elemento;
+array.push(elemento);
   return array;
 }
 
@@ -61,12 +60,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  for(var i = 0; i < array.length; i++) {
-    if(array[i] === elemento) {
-      return true;
-    }
-  }
-  return false;
+  return array.includes(elemento)
 }
 
 
@@ -150,13 +144,16 @@ function empiezaConNueve(n) {
 function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
-  //Escribe tu código aquí  
-for (var i =0 ; i < arreglo.length - 1; i++) {
-    if(arreglo[i] !== arreglo[i+1]){
-      return false
+  //Escribe tu código aquí
+  var newArray = arreglo[0];
+for (var i = 1 ; i < arreglo.length ; i++) {
+    if(newArray === arreglo[i]){
+      newArray = arreglo[i];
+    } else {
+      return false;
     }
   }
-  return true  
+  return true  ;
 } 
 
 function mesesDelAño(array) {
@@ -165,16 +162,16 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   var nuevoArray = [];
-  for(let i= 0; i<array.length; i++) {
+  for( var i = 0; i < array.length; i++) {
     if(array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
       nuevoArray.push(array[i]);
     }
   }
-  if(nuevoArray.length < 3) {
-    return "No se encontraron los meses pedidos";
+  if(nuevoArray.length == 3) {
+    return nuevoArray;
   }
   else {
-      return nuevoArray;
+      return "No se encontraron los meses pedidos";
   }
 }
 
