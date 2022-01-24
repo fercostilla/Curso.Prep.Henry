@@ -8,19 +8,18 @@ function crearUsuario() {
   // {{nombre}} debe ser el nombre definido en cada instancia
   // Devuelve la clase
   // Tu código:
-   function Usuario(opciones) {
+   class Usuario {
+    constructor(opciones){
     this.usuario = opciones.usuario;
     this.nombre = opciones.nombre;
     this.email = opciones.email;
     this.password = opciones.password;
-  }
-
-  Usuario.prototype.saludar = function() {
+    this.saludar = function(){
     return 'Hola, mi nombre es ' + this.nombre;
-  };
-
-  return Usuario;
-
+    }
+   }
+  }
+ return Usuario;
 }
 
 function agregarMetodoPrototype(Constructor) {
@@ -81,7 +80,7 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   //Con esta función vamos a crear una nueva persona a partir de nuestro constructor de persona (creado en el ejercicio anterior)
   //Recibirá los valores "Juan", "Perez", 22, "Saavedra 123" para sus respectivas propiedades
   //Devolver la nueva persona creada
-   const persona = new Persona(nombre, apellido, edad, dir);
+   const persona = new Persona("Juan", "Pérez", 22 , "Saavedra 123");
   return persona;
 }
   
